@@ -47,4 +47,51 @@ header {
 }
 aside {
   grid-area: as;
+  text-decoration: none;
+  border: auto;
+  border-color: crimson;
+  border-radius: 2px;
+  background-origin: padding-box;
 }
+body {
+  background-color: rgb(177, 152, 9);
+  justify-content: right;
+  max-width: 700px;
+  width: 80%;
+  text-decoration: none;
+}
+footer {
+}
+img {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+main {
+    text-align: center;
+}
+article {
+  grid-area: ar;
+}
+header {
+  grid-area: h;
+}
+footer{
+    grid-area: f;
+}
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 3 / span 6;}
+  .footer {grid-area: 4 / span 6;}
+}
+
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
